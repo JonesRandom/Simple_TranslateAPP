@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Simple Translate</string>
+    <string name="query_ui">id</string>
+    <string name="query_key">YOUR-API-KEY</string>
+</resources>
