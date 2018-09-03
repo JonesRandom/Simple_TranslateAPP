@@ -1,4 +1,6 @@
-package com.jonesrandom.testranslateapi.Common;
+package com.jonesrandom.translateapp.common;
+
+import android.support.annotation.NonNull;
 
 import java.io.IOException;
 import java.lang.annotation.Annotation;
@@ -21,7 +23,7 @@ public class StringConverter extends Converter.Factory {
 
             return new Converter<ResponseBody, Object>() {
                 @Override
-                public Object convert(ResponseBody value) throws IOException {
+                public Object convert(@NonNull ResponseBody value) throws IOException {
                     return value.string();
                 }
             };
@@ -37,7 +39,7 @@ public class StringConverter extends Converter.Factory {
 
             return new Converter<String, RequestBody>() {
                 @Override
-                public RequestBody convert(String value) throws IOException {
+                public RequestBody convert(@NonNull String value) {
                     return RequestBody.create(MEDIA_TYPE,value);
                 }
             };
