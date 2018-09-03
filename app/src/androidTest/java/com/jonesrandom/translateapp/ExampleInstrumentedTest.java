@@ -1,4 +1,4 @@
-package com.jonesrandom.testranslateapi;
+package com.jonesrandom.translateapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
