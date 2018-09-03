@@ -1,4 +1,4 @@
-package com.jonesrandom.testranslateapi;
+package com.jonesrandom.translateapp;
 
 import org.junit.Test;
 
