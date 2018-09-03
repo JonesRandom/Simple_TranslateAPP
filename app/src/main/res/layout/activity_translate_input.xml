@@ -2,48 +2,49 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:id="@+id/inputLayout">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dari"/>
+                android:text="Dari" />
+
             <Spinner
                 android:id="@+id/spinFrom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:spinnerMode="dialog"/>
+                android:spinnerMode="dialog" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ke"/>
+                android:text="Ke" />
+
             <Spinner
                 android:id="@+id/spinTo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:spinnerMode="dialog"/>
+                android:spinnerMode="dialog" />
         </LinearLayout>
-
 
 
     </LinearLayout>
@@ -51,25 +52,28 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Masukan Kata"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:text="Masukan Kata" />
+
     <EditText
-        android:id="@+id/kataTerjemahan"
+        android:id="@+id/etTranslate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="#dcdcdc"
+        android:gravity="top"
+        android:inputType="textNoSuggestions"
         android:minLines="3"
-        android:padding="10dp"
-        android:gravity="top"/>
+        android:padding="10dp" />
 
     <Button
         android:id="@+id/btnTerjemahan"
-        android:layout_width="match_parent"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TERJEMAHKAN"
         android:layout_marginTop="10dp"
-        android:background="@color/colorPrimary"
-        android:textColor="#fff"/>
+        android:layout_gravity="end"
+        android:text="TERJEMAHKAN"
+        android:textColor="@color/colorAccent" />
 
 </LinearLayout>

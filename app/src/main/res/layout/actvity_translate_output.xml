@@ -36,7 +36,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/kataDiTerjemahkan"
+            android:id="@+id/tvTranslate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Output"
@@ -45,12 +45,13 @@
 
         <Button
             android:id="@+id/btnTerjemahan"
-            android:layout_width="match_parent"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="copy to clipboard"
-            android:layout_marginTop="15dp"
-            android:background="@color/colorPrimary"
-            android:textColor="#fff"/>
+            android:layout_marginTop="10dp"
+            android:layout_gravity="end"
+            android:text="Copy to clipboard"
+            android:textColor="@color/colorAccent" />
     </LinearLayout>
 
 
